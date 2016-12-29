@@ -7,45 +7,33 @@
     </head>
 <body class = "container col-md-12">
     <h1 class= "center firsth"> walidacja formularzy </h1>
-    <div class = "col-md-2 col-md-offset-2 tab center">
-        <form>
-            <input type="text" name="your-name" placeholder="Imię i nazwisko" data-error="Podaj imię i nazwisko">
-        </form>
-    </div>
-    <div class = "col-md-2  tab center">
-        <form>
-             <input type="email" name="your-email" placeholder="Adres e-mail" data-error="Podaj poprawny adres e-mail">
-        </form>
-    </div>
-    <div class = "col-md-2  tab center">
-        <form>
-            <select name="your-subject" data-error="Wybierz temat wiadomości">
-                <option value="" disabled selected>- Temat wiadomości -</option>
+    <form action="#" id="myForm">
+        <div class = "col-md-2 col-md-offset-2 tab center">
+                <input type="text" name="your-name" placeholder="Imię i nazwisko" data-error="Podaj imię i nazwisko">
+        </div>
+        <div class = "col-md-2  tab center">
+                <input type="email" name="your-email" placeholder="Adres e-mail" data-error="Podaj poprawny adres e-mail">
+        </div>
+        <div class = "col-md-2  tab center">
+            <select name="your-subject" data-error="Wybierz temat wiadomości">                    <option value="" disabled selected>- Temat wiadomości -</option>
                 <option value="pytanie">Pytanie</option>
                 <option value="propozycja">Propozycja</option>
                 <option value="support">Support</option>
-            </select>
-        </form>
-    </div>
-    <div class="clearfix col-md-12">
-        <div class = " col-md-6 col-md-offset-2 tab center">
-            <form>
-                 <textarea name="your-message" placeholder="Treść wiadomości" data-error="Wpisz treść wiadomości" class="textvalue"></textarea>
-
-            </form>
+            </select>   
+        </div>   
+        <div class="clearfix col-md-12">
+            <div class = " col-md-6 col-md-offset-2 tab center">
+                    <textarea name="your-message" placeholder="Treść wiadomości" data-error="Wpisz treść wiadomości" class="textvalue"></textarea>
+            </div>
         </div>
-    </div>
+   
+    
     <div class="clearfix col-md-12">
         <div class="col-md-offset-7 col-md-1">
-            <button type="submit" class="butto">Wyślij</button>
+            <button type="submit" class="butto" >Wyślij</button>
         </div>
     </div>
-
-    </div>
-
-
-    </div>
-
+     </form>
 
 <script src="js/script.js"></script>
 </body>
